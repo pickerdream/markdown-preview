@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Markdown Preview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="editor-pane">
+            <div class="mode-selector">
+                <button id="mode-markdown" class="active">Markdown</button>
+                <button id="mode-html">HTML</button>
+                <button id="to-html-button">HTMLに変換</button>
+                <button id="to-markdown-button">Markdownに変換</button>
+            </div>
+            <textarea id="editor-input" placeholder="ここにMarkdownを入力..."></textarea>
+        </div>
+        <div class="preview-pane">
+            <button id="copy-preview-button" class="copy-button">プレビューをコピー</button>
+            <div id="html-output"></div>
+        </div>
+    </div>
+    <script src="./renderer.js"></script>
+</body>
+</html>
